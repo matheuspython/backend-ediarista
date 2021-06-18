@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Nome</td>
+            <td>Email</td>
+            <td>CEP</td>
+            <td>Ações</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for diarista in diaristas %}
+        <tr>
+            <td>{{diarista.id}}</td>
+            <td>{{diarista.nome}}</td>
+            <td>{{diarista.email}}</td>
+            <td>{{diarista.cep}}</td>
+            <td>
+                <a href="#">Editar</a>
+                <a href="#">Remover</a>
+            </td>
+        </tr>
+    </tbody>
+
+
+
+
+
+</table>
+</body>
+</html>
